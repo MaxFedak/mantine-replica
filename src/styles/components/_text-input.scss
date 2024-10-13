@@ -1,0 +1,68 @@
+@import '../variables';
+
+.text-input {
+  margin-bottom: $gap;
+
+  &__label {
+    display: inline-block;
+    font-weight: 500;
+    word-break: break-word;
+    cursor: default;
+    -webkit-tap-highlight-color: transparent;
+    font-size: $font-size;
+    line-height: 1.55;
+
+    &--required::after {
+      content: " *";
+      color: $error-color;
+    }
+  }
+
+  &__wrapper {
+    position: relative;
+  }
+
+  &__field {
+    width: 100%;
+    font-size: $font-size;
+    background-color: #fff !important;
+    border: $border-size solid $border-color;
+    border-radius: 4px;
+    transition: border-color 0.1s ease-in-out;
+    height: $input-height;
+    line-height: $line-height;
+    padding-inline: $input-hor-padding;
+    cursor: text;
+
+    &::placeholder {
+      color: $placeholder-color;
+    }
+
+    &:focus, &:active {
+      outline: 0;
+      border-color: $active-color;
+    }
+
+    &--error {
+      border-color: $error-color;
+
+      &:focus {
+        box-shadow: 0 0 0 2px rgba($error-color, 0.25);
+      }
+    }
+
+    &--focused {
+      border-color: $active-color;
+    }
+
+    &--disabled {
+      opacity: 1;
+      cursor: not-allowed;
+    }
+  }
+
+  &__error {
+    font-size: $error-font-size;
+    color: $error-color;
+  }
+}
