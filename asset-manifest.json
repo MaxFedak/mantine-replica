@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/MaxFedak/mantine-replica/static/css/main.cdaf0e12.css",
+    "main.js": "/MaxFedak/mantine-replica/static/js/main.abc979d0.js",
+    "static/js/453.a4a4b6c9.chunk.js": "/MaxFedak/mantine-replica/static/js/453.a4a4b6c9.chunk.js",
+    "index.html": "/MaxFedak/mantine-replica/index.html",
+    "main.cdaf0e12.css.map": "/MaxFedak/mantine-replica/static/css/main.cdaf0e12.css.map",
+    "main.abc979d0.js.map": "/MaxFedak/mantine-replica/static/js/main.abc979d0.js.map",
+    "453.a4a4b6c9.chunk.js.map": "/MaxFedak/mantine-replica/static/js/453.a4a4b6c9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.cdaf0e12.css",
+    "static/js/main.abc979d0.js"
+  ]
+}
