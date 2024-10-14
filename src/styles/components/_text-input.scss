@@ -47,7 +47,7 @@
       border-color: $error-color;
 
       &:focus {
-        box-shadow: 0 0 0 2px rgba($error-color, 0.25);
+        border-color: $error-color;
       }
     }
 
@@ -59,10 +59,38 @@
       opacity: 1;
       cursor: not-allowed;
     }
+
+    &--password {
+      padding-right: calc(#{$input-hor-padding} * 2 + 24px); // Make room for the toggle button
+    }
   }
 
   &__error {
     font-size: $error-font-size;
     color: $error-color;
+  }
+
+  &__toggle-visibility {
+    position: absolute;
+    right: $input-hor-padding;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    color: $border-color;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &:hover {
+      color: $placeholder-color;
+    }
+
+    &:focus {
+      outline: none;
+    }
   }
 }
